@@ -543,9 +543,9 @@ app.directive('ngTable', ['$compile', '$q', '$parse',
                         delete filter.templateURL;
                     }
                     
-                    if (filter && filter.name) {
-                        filterName = filter.name;
-                        delete filter.name;
+                    if (filter && filter.nameAttr) {
+                        filterName = filter.nameAttr;
+                        delete filter.nameAttr;
                     }
 
                     el.attr('data-title-text', parsedTitle()); // this used in responsive table
